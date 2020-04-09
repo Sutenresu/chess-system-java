@@ -38,7 +38,8 @@ public class Board {
 	
 	//As was stated in the project specific methods to insert and modify pieces, we will not use getset
 	public void placePiece(Piece piece, Position position){
-		
+		pieces[position.getRow()][position.getColumn()] = piece;
+		piece.position = position;//protected can be accessed in the same package
 	}
 	
 }
